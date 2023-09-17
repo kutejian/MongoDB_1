@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "WEEJga5SA/zQXt8/oFzQUXg8ukfYGL4ozjPRY7dV8kQYZjwYY5iglKeSzG9/T6vUoQ0g4EsM/d2zj82P9LBOLA==",
+  "dgSpecHash": "SGhRFk36NiE9Iy7Mr62kBZysj11EAtddB9GwrlYPAwtmc2RIbVCmgDQOoC4QW8zNk2WRFNQ+O0+lbyuib7AHEA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\30765\\Desktop\\新建文件夹 (2)\\WebApplication1\\WebApplication1\\WebApplication1.csproj",
+  "projectFilePath": "D:\\资源\\ProjectRabbitMQ\\MongoDB_1\\WebApplication1\\WebApplication1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\30765\\.nuget\\packages\\awssdk.core\\3.7.100.14\\awssdk.core.3.7.100.14.nupkg.sha512",
     "C:\\Users\\30765\\.nuget\\packages\\awssdk.securitytoken\\3.7.100.14\\awssdk.securitytoken.3.7.100.14.nupkg.sha512",

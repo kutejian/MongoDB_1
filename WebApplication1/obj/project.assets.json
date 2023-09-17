@@ -1248,11 +1248,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\30765\\Desktop\\新建文件夹 (2)\\WebApplication1\\WebApplication1\\WebApplication1.csproj",
+      "projectUniqueName": "D:\\资源\\ProjectRabbitMQ\\MongoDB_1\\WebApplication1\\WebApplication1.csproj",
       "projectName": "WebApplication1",
-      "projectPath": "C:\\Users\\30765\\Desktop\\新建文件夹 (2)\\WebApplication1\\WebApplication1\\WebApplication1.csproj",
+      "projectPath": "D:\\资源\\ProjectRabbitMQ\\MongoDB_1\\WebApplication1\\WebApplication1.csproj",
       "packagesPath": "C:\\Users\\30765\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\30765\\Desktop\\新建文件夹 (2)\\WebApplication1\\WebApplication1\\obj\\",
+      "outputPath": "D:\\资源\\ProjectRabbitMQ\\MongoDB_1\\WebApplication1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\30765\\AppData\\Roaming\\NuGet\\NuGet.Config",

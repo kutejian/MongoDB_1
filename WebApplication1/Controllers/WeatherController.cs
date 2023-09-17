@@ -9,15 +9,15 @@ namespace WebApplication1.Controllers
 {
     [ApiController]
     [Route("[controller]")]
-    public class WeatherForecastController : ControllerBase
+    public class WeatherController : ControllerBase
     {
 
         public IMongoDBApi _mongoDBApi;
-        public WeatherForecastController(IMongoDBApi mongoDBApi)
+        public WeatherController(IMongoDBApi mongoDBApi)
         {
             _mongoDBApi = mongoDBApi;
         }
-        [HttpGet]
+        [HttpGet("GetList")]
         public ActionResult<List<User>> GetList()
         {
             var user =  _mongoDBApi.GetList();
@@ -30,7 +30,7 @@ namespace WebApplication1.Controllers
             return user;
         }
 
-        [HttpGet("{id:length(24)}")]
+        [HttpGet("Get")]
         public ActionResult<User> Get(string id)
         {
             var user =  _mongoDBApi.GetAsync(id);
@@ -42,7 +42,7 @@ namespace WebApplication1.Controllers
 
             return user;
         }
-        [HttpGet]
+        [HttpGet("GetCondition")]
         public ActionResult<List<User>> GetCondition()
         {
             var pipeline = new List<BsonDocument>
@@ -61,7 +61,7 @@ namespace WebApplication1.Controllers
             return user;
         }
 
-        [HttpPost]
+        [HttpPost("Post")]
         public IActionResult Post(User newuser)
         {
              _mongoDBApi.CreateAsync(newuser);
@@ -69,7 +69,7 @@ namespace WebApplication1.Controllers
             return CreatedAtAction(nameof(Get), new { id = newuser.Id }, newuser);
         }
 
-        [HttpPut("{id:length(24)}")]
+        [HttpPost("Update")]
         public  IActionResult Update(string id, User updatedBook)
         {
             var book =  _mongoDBApi.GetAsync(id);
@@ -86,7 +86,7 @@ namespace WebApplication1.Controllers
             return NoContent();
         }
 
-        [HttpDelete]
+        [HttpDelete("Delete {id}")]
         public IActionResult Delete(string id)
         {
             var book =  _mongoDBApi.GetAsync(id);
@@ -100,8 +100,8 @@ namespace WebApplication1.Controllers
 
             return NoContent();
         }
-        [HttpDelete]
-        public IActionResult Delete()
+        [HttpDelete("Delete")]
+        public IActionResult Delete1()
         {
             var filter = Builders<User>.Filter.In("love", new BsonArray(new[] { "一年级", "二班" }));
 
@@ -109,6 +109,5 @@ namespace WebApplication1.Controllers
 
             return NoContent();
         }
-        
     }
 }
