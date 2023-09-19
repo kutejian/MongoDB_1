@@ -1,3 +1,3 @@
 # MongoDB
  MongoDB的简单使用
-https://note.youdao.com/s/QafvsAxN
+笔记 https://note.youdao.com/s/QafvsAxN
